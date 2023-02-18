@@ -6,6 +6,9 @@ board = np.zeros((8, 8), dtype=int)
 board[1::2, ::2] = 1
 board[::2, 1::2] = 1
 
+for i in board:
+    print(*i)
+
 board[::2, 1::2] = 1
 board[1::2, ::2] = 1
 
